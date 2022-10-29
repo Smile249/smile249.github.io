@@ -3,12 +3,15 @@ html{
     color: white;
     font-family: 'Comfortaa', sans-serif;
     margin: 2%;
+body{
+
+}
 }
 h1{
     text-align: center;
     padding-bottom: 6%;
 }
-p{
+.subtitle{
     font-size: 21px;
     text-align: center;
 }
@@ -22,4 +25,21 @@ p{
 }
 a{
     align: center;
+}
+img.bugshirt{
+    max-width: 27%;
+    float: left;
+    left: 5%;
+    margin-bottom: 5%;
+    padding-right: 3%;
+}
+.floatText{
+    display: flex;
+    padding-top: 5%;
+    font-size: 18px;
+    padding-bottom: 40%;
+}
+footer{
+    position: fixed;
+    bottom: 0;
 }
