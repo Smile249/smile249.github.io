@@ -3,9 +3,6 @@ html{
     color: white;
     font-family: 'Comfortaa', sans-serif;
     margin: 2%;
-body{
-
-}
 }
 h1{
     text-align: center;
@@ -23,9 +20,6 @@ h1{
     margin: 3%;
     border-radius: 40px;
 }
-a{
-    align: center;
-}
 img.bugshirt{
     max-width: 27%;
     float: left;
@@ -42,4 +36,7 @@ img.bugshirt{
 footer{
     position: fixed;
     bottom: 0;
+}
+.lefthandside{
+    padding-top: 3%;
 }
