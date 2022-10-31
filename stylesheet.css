@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'Comfortaa';
-    src: url('/smile249.github.io/font/Comfortaa.eot'); /* IE9 Compat Modes */
-    src: url('/smile249.github.io/font/Comfortaa.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/smile249.github.io/font/Comfortaa.woff') format('woff'), /* Modern Browsers */
-         url('/smile249.github.io/font/Comfortaa.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('/smile249.github.io/font/Comfortaa.svg#svgComfortaa') format('svg'); /* Legacy iOS */
-}
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 html{
     background-color: black;
     color: white;
