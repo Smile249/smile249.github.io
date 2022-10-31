@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Comfortaa', sans-serif;
+    src: url(/smile249.github.io/font/Comfortaa.ttf);
+  }
 html{
     background-color: black;
     color: white;
