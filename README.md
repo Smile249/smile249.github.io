@@ -8,3 +8,5 @@ More stuff will be available soon. Planning to add more design stuff on there an
 - Japanese
 - Korean
 - Spanish
+
+DM me on Discord if you are able to! (languages not listed here are allowed as well!)
