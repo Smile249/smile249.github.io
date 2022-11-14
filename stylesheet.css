@@ -41,14 +41,3 @@ footer{
 .lefthandside{
     padding-top: 3%;
 }
-.flag{
-    max-width: 2%;
-    margin: 0.15%;
-    border-radius: 18%;
-    border-color: white;
-    border: 0.01px solid;
-    
-}
-.discord{
-    padding-bottom: 10%;
-}
