@@ -9,4 +9,4 @@ More stuff will be available soon. Planning to add more design stuff on there an
 - Korean
 - Spanish
 
-DM me on Discord if you are able to! (languages not listed here are allowed as well!)
+DM me on Discord (Smile#1941) if you are able to help! (languages not listed here are allowed as well!)
