@@ -12,6 +12,7 @@
     <link rel="icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 </head>
 
 <body>
@@ -65,9 +66,15 @@
     </div>
 
 
-<footer>
-    <h5 class="footer">
-        Ⓒ Smile, Le Peeper Sauvage - Tous les droits sont réservés.
-    </h5>
-</footer>
+    <footer>
+        <script>
+            kofiWidgetOverlay.draw('smile249', {
+                'type': 'floating-chat',
+                'floating-chat.donateButton.text': 'Support me',
+                'floating-chat.donateButton.background-color': '#ff5f5f',
+                'floating-chat.donateButton.text-color': '#fff'
+            });
+        </script>
+    </footer>
+
 </html>
