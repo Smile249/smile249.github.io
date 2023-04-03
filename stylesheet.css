@@ -1,53 +1,84 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa&display=swap);
-html{
-    background-color: black;
+
+html {
+    background-color: rgb(0, 0, 0);
     color: white;
     font-family: 'Comfortaa';
     margin: 2%;
 }
-h1{
+
+h1 {
     text-align: center;
+    justify-content: center;
+    justify-self: center;
     padding-bottom: 6%;
 }
-.subtitle{
+
+.subtitle {
     font-size: 21px;
     text-align: center;
-}
-.container {
-    display: flex;
     justify-content: center;
 }
-.cover{
-    margin: 3%;
+
+.cover {
     border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    transition: scale 0.2s cubic-bezier(0.67,0.01,0.17,1.04);
 }
-img.bugshirt{
+
+img.bugshirt {
     max-width: 27%;
     float: left;
     left: 5%;
     margin-bottom: 5%;
     padding-right: 3%;
 }
-.floatText{
+
+.floatText {
     display: flex;
     padding-top: 5%;
     font-size: 18px;
     padding-bottom: 40%;
 }
-footer{
+
+footer {
     position: fixed;
     bottom: 0;
 }
-.lefthandside{
+
+.lefthandside {
     padding-top: 3%;
 }
-.flag{
+
+.flag {
     max-width: 2%;
     margin: 0.15%;
     border-radius: 18%;
     border-color: white;
     border: 0.01px solid;
 }
-.discord{
+
+.discord {
     padding-bottom: 10%;
+}
+
+.container {
+    max-width: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2vh;
+}
+
+.cover:hover{
+    scale: 1.03;
+}
+
+.cover:active{
+    scale: 0.99;
 }

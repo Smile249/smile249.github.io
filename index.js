@@ -28,4 +28,63 @@ fetch("https://api.beatsaver.com/maps/uploader/4284314/0")
       document.getElementById("coverThree").title = map.docs[2].name;
       document.getElementById("coverFour").title = map.docs[3].name;
       
+      //check for curator tag on map
+
+      if ('docs' in map && 'curator' in map.docs[0]) {
+        let clr = '#00bc8c'
+
+        const image = document.getElementById("coverOne");
+        image.style.boxShadow = `0 0 18px ${clr}`;
+      }
+
+      if ('docs' in map && 'curator' in map.docs[1]) {
+        let clr = '#00bc8c'
+
+        const image = document.getElementById("coverTwo");
+        image.style.boxShadow = `0 0 18px ${clr}`;
+      }
+
+      if ('docs' in map && 'curator' in map.docs[2]) {
+        let clr = '#00bc8c'
+
+        const image = document.getElementById("coverThree");
+        image.style.boxShadow = `0 0 18px ${clr}`;
+      }
+
+      if ('docs' in map && 'curator' in map.docs[3]) {
+        let clr = '#00bc8c'
+
+        const image = document.getElementById("coverFour");
+        image.style.boxShadow = `0 0 18px ${clr}`;
+      } 
+      
+      //check for ranked tag on map
+      if (map.docs[0].ranked == true) {
+        let clr = '#f39c12'
+
+        const image = document.getElementById("coverOne");
+        image.style.boxShadow = `0 0 18px ${clr}`;
+      } 
+
+      if (map.docs[1].ranked == true) {
+        let clr = '#f39c12'
+
+        const image = document.getElementById("coverTwo");
+        image.style.boxShadow = `0 0 18px ${clr}`;
+      } 
+
+      if (map.docs[2].ranked == true) {
+        let clr = '#f39c12'
+
+        const image = document.getElementById("coverThree");
+        image.style.boxShadow = `0 0 18px ${clr}`;
+      } 
+
+      if (map.docs[3].ranked == true) {
+        let clr = '#f39c12'
+
+        const image = document.getElementById("coverFour");
+        image.style.boxShadow = `0 0 18px ${clr}`;
+      } 
+
   });
