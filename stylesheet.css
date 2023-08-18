@@ -7,6 +7,34 @@ html {
     margin: 2%;
 }
 
+.amtcontainer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60% 40%;
+    max-height: 50%;
+}
+
+.amtcontainer_invert {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40% 60%;
+    max-height: 50%;
+}
+
+.right {
+    flex-wrap: wrap;
+    text-align: right;
+    line-height: 160%;
+}
+
+img.right {
+    max-width: 50%;
+}
+
+img.left {
+    max-width: 70%;
+}
+
 h1 {
     text-align: center;
     justify-content: center;
@@ -27,15 +55,7 @@ h1 {
     justify-content: center;
 
 
-    transition: scale 0.2s cubic-bezier(0.67,0.01,0.17,1.04);
-}
-
-img.bugshirt {
-    max-width: 27%;
-    float: left;
-    left: 5%;
-    margin-bottom: 5%;
-    padding-right: 3%;
+    transition: scale 0.2s cubic-bezier(0.67, 0.01, 0.17, 1.04);
 }
 
 .floatText {
@@ -50,8 +70,31 @@ footer {
     bottom: 0;
 }
 
+nav {
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+nav>a {
+    padding-left: 0.4vh;
+    padding-right: 0.4vh;
+}
+
 .lefthandside {
+    font-size: 16px;
     padding-top: 3%;
+    padding-bottom: 3%;
+    line-height: 140%;
+}
+
+.lefthandside_min {
+    font-size: 16px;
+    padding-top: 3%;
+    line-height: 140%;
+}
+
+ul {
+    padding-bottom: 3%;
 }
 
 .flag {
@@ -62,10 +105,6 @@ footer {
     border: 0.01px solid;
 }
 
-.discord {
-    padding-bottom: 10%;
-}
-
 .container {
     max-width: fit-content;
     margin: 0 auto;
@@ -73,12 +112,13 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 2vh;
+    padding-bottom: 1.5%;
 }
 
-.cover:hover{
+.cover:hover {
     scale: 1.03;
 }
 
-.cover:active{
+.cover:active {
     scale: 0.99;
 }
