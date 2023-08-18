@@ -1,3 +1,3 @@
 # smile249.github.io
-A website to show my projects for Beat Saber and design.
+A website to show my projects and hobbies.
 
