@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+html, body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  padding-top: 0, auto;
+  transition: background-color 3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.nav {
+  font-size: 16px;
+  margin-top: 10%;
+  color: white;
+}
+
+h1 {
+  margin-top: 0;
+  padding-top: 7%;
+}
+
+.chapterText {
+  margin-bottom: 3%;
+}
+
+.map {
+  position: relative;
+  text-align: center;
+  transform: translate(-50%);
+  width: 50vh;
+  height: 12vh;
+  background: white;
+  position: relative;
+  left: 50%;
+  border-radius: 20px;
+  margin-top: 1%;
+  -webkit-mask-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  mask-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+}
+.map p {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-style: bold;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  text-shadow: black 1px 0px 10px;
+}
+.map img.cover {
+  transform: translate(0, -38%);
+  position: relative;
+  right: 5dvh;
+  top: 3dvh;
+  max-width: 112%;
+  filter: blur(1.8px);
+  transition: scale 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.map img.bslogo {
+  position: relative;
+  max-width: 15%;
+  top: -453%;
+  left: -37%;
+}
+
+div:hover img.cover {
+  scale: 1.08;
+}
+
+.partp {
+  user-select: none;
+}
+
+.current {
+  user-select: none;
+}
+
+footer {
+  padding-top: 3%;
+}
+
+.kofi {
+  color: #ff5a64;
+}
+
+/*# sourceMappingURL=styling.css.map */

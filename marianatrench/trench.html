@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styling.css" />
+  <title>Mariana Trench</title>
+</head>
+
+<body>
+
+  <a class="nav" href="https://smile249.github.io/index.html">Home</a>
+
+  <h1>Mariana Trench</h1>
+  <h2 class="chapterText" id="chapter"> </h2>
+
+  <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+  <div id="player"></div>
+
+  <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement("script");
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName("script")[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player("player", {
+        height: "390",
+        width: "640",
+        videoId: "HL77EXiOihg",
+        playerVars: {
+          playsinline: 1,
+        },
+        events: {
+          onReady: onPlayerReady,
+          onStateChange: onPlayerStateChange,
+        },
+      });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = false;
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING && !done) {
+        done = true;
+      }
+    }
+
+    //get current time
+    setInterval(function () {
+      var date = new Date(null);
+      date.setSeconds(player.getCurrentTime());
+      var hhmmssFormat = date.toISOString().substr(11, 8);
+      document.getElementById("time").innerHTML = hhmmssFormat
+
+      //set name of chapter from time
+      let time = player.getCurrentTime() //Math.floor(player.getCurrentTime())
+
+      switch (true) {
+        case time >= "0.000000000000000000001" && time <= "157":
+          document.getElementById("chapter").innerHTML = "Diving Point";
+          document.getElementById("current").innerHTML = "Diving Point";
+          document.getElementById("currentimg").src = "images/1.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35171";
+          document.body.style.backgroundColor = "#4cbae2"
+          break;
+        case time >= "157" && time <= "727":
+          document.getElementById("chapter").innerHTML = "Drifting Shelf";
+          document.getElementById("current").innerHTML = "Drifting Shelf";
+          document.getElementById("currentimg").src = "images/2.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/3516f";
+          document.body.style.backgroundColor = "#1b647c"
+          break;
+        case time >= "727" && time <= "1520":
+          document.getElementById("chapter").innerHTML = "Incoming Void";
+          document.getElementById("current").innerHTML = "Incoming Void";
+          document.getElementById("currentimg").src = "images/3.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35170";
+          document.body.style.backgroundColor = "#2d585c"
+          break;
+        case time >= "1520" && time <= "2164":
+          document.getElementById("chapter").innerHTML = "New World";
+          document.getElementById("current").innerHTML = "New World";
+          document.getElementById("currentimg").src = "images/3.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35172";
+          document.body.style.backgroundColor = "#366263"
+          break;
+        case time >= "2164" && time <= "2989":
+          document.getElementById("chapter").innerHTML = "Pressurizer Point";
+          document.getElementById("current").innerHTML = "Pressurizer Point";
+          document.getElementById("currentimg").src = "images/3.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35169";
+          document.body.style.backgroundColor = "#36574d"
+          break;
+        case time >= "2989" && time <= "3672":
+          document.getElementById("chapter").innerHTML = "Bottom Glass";
+          document.getElementById("current").innerHTML = "Bottom Glass";
+          document.getElementById("currentimg").src = "images/4.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35176";
+          document.body.style.backgroundColor = "#3a564d"
+          break;
+        case time >= "3672" && time <= "4298":
+          document.getElementById("chapter").innerHTML = "Abyss I";
+          document.getElementById("current").innerHTML = "Abyss I";
+          document.getElementById("currentimg").src = "images/4.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35173";
+          document.body.style.backgroundColor = "#2e494c"
+          break;
+        case time >= "4298" && time <= "4950":
+          document.getElementById("chapter").innerHTML = "Abyss II";
+          document.getElementById("current").innerHTML = "Abyss II";
+          document.getElementById("currentimg").src = "images/4.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/34b49";
+          document.body.style.backgroundColor = "#2d3243"
+          break;
+        case time >= "4950" && time <= "5481":
+          document.getElementById("chapter").innerHTML = "Last Return";
+          document.getElementById("current").innerHTML = "Last Return";
+          document.getElementById("currentimg").src = "images/5.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/34b49";
+          document.body.style.backgroundColor = "#2b2e3d"
+          break;
+        case time >= "5481" && time <= "6441":
+          document.getElementById("chapter").innerHTML = "Rifting Point";
+          document.getElementById("current").innerHTML = "Rifting Point";
+          document.getElementById("currentimg").src = "images/5.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35174";
+          document.body.style.backgroundColor = "#2d2a31"
+          break;
+        case time >= "6441" && time <= "7173":
+          document.getElementById("chapter").innerHTML = "Wall Slope";
+          document.getElementById("current").innerHTML = "Wall Slope";
+          document.getElementById("currentimg").src = "images/5.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35175";
+          document.body.style.backgroundColor = "#2d2830"
+          break;
+        case time >= "7173" && time <= "8142":
+          document.getElementById("chapter").innerHTML = "Sonar Echo";
+          document.getElementById("current").innerHTML = "Sonar Echo";
+          document.getElementById("currentimg").src = "images/5.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35168";
+          document.body.style.backgroundColor = "#2b262c"
+          break;
+        case time >= "8142" && time <= "9098":
+          document.getElementById("chapter").innerHTML = "Leviathan's Lair";
+          document.getElementById("current").innerHTML = "Leviathan's Lair";
+          document.getElementById("currentimg").src = "images/5.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35181";
+          document.body.style.backgroundColor = "#2a2029"
+          break;
+        case time >= "9098" && time <= "9981":
+          document.getElementById("chapter").innerHTML = "Town of Atlanta";
+          document.getElementById("current").innerHTML = "Town of Atlanta";
+          document.getElementById("currentimg").src = "images/5.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35180";
+          document.body.style.backgroundColor = "#2c2023"
+          break;
+        case time >= "9981" && time <= "10633":
+          document.getElementById("chapter").innerHTML = "Entering Hell";
+          document.getElementById("current").innerHTML = "Entering Hell";
+          document.getElementById("currentimg").src = "images/6.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35177";
+          document.body.style.backgroundColor = "#2e1a16"
+          break;
+        case time >= "10633" && time <= "11033":
+          document.getElementById("chapter").innerHTML = "Trench Point";
+          document.getElementById("current").innerHTML = "Trench Point";
+          document.getElementById("currentimg").src = "images/6.png";
+          document.getElementById("link").href = "https://beatsaver.com/maps/35178";
+          document.body.style.backgroundColor = "#120406"
+          break;
+        case time >= "11033":
+          document.getElementById("chapter").innerHTML = "End";
+          document.body.style.backgroundColor = "#202124"
+          break;
+        default:
+          document.getElementById("chapter").innerHTML = " ";
+          document.body.style.backgroundColor = "#202124"
+          document.getElementbyId("link").element.style.opacity = "0"
+          break;
+      }
+    }, 500);
+  </script>
+
+  <p id="time">Unknown</p>
+
+  <h2>Play current part in Beat Saber</h2>
+
+  <div class="map" class="pcurrent">
+    <img src="images/1.png" id="currentimg" class="cover">
+    <p class="current" id="current"><em>Not Playing</em></p>
+    <a href="" target="_blank" id="link"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+
+
+  <h2>Other parts</h2>
+
+  <div class="map" class="p1">
+    <img class="cover" src="images/1.png">
+    <p class="partp">Diving Point</p>
+    <a href="https://beatsaver.com/maps/35171" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p2">
+    <img class="cover" src="images/2.png">
+    <p class="partp">Drifting Shelf</p>
+    <a href="https://beatsaver.com/maps/3516f" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p3">
+    <img class="cover" src="images/3.png">
+    <p class="partp">Incoming Void</p>
+    <a href="https://beatsaver.com/maps/35170" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p4">
+    <img class="cover" src="images/3.png">
+    <p class="partp">New World</p>
+    <a href="https://beatsaver.com/maps/35172" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p5">
+    <img class="cover" src="images/3.png">
+    <p class="partp">Pressurizer Point</p>
+    <a href="https://beatsaver.com/maps/35169" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p6">
+    <img class="cover" src="images/4.png">
+    <p class="partp">Bottom Glass</p>
+    <a href="https://beatsaver.com/maps/35176" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p8">
+    <img class="cover" src="images/4.png">
+    <p class="partp">Abyss I</p>
+    <a href="https://beatsaver.com/maps/35173" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p9">
+    <img class="cover" src="images/5.png">
+    <p class="partp">Abyss II</p>
+    <a href="https://beatsaver.com/maps/34b49" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p10">
+    <img class="cover" src="images/5.png">
+    <p class="partp">Rifting Point</p>
+    <a href="https://beatsaver.com/maps/35174" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p11">
+    <img class="cover" src="images/5.png">
+    <p class="partp">Wall Slope</p>
+    <a href="https://beatsaver.com/maps/35175" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p12">
+    <img class="cover" src="images/5.png">
+    <p class="partp">Sonar Echo</p>
+    <a href="https://beatsaver.com/maps/35168" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p13">
+    <img class="cover" src="images/5.png">
+    <p class="partp">Leviathan's Lair</p>
+    <a href="https://beatsaver.com/maps/35181" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p14">
+    <img class="cover" src="images/6.png">
+    <p class="partp">Town of Atlanta</p>
+    <a href="https://beatsaver.com/maps/35180" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p15">
+    <img class="cover" src="images/6.png">
+    <p class="partp">Entering Hell</p>
+    <a href="https://beatsaver.com/maps/35177" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+  <div class="map" class="p16">
+    <img class="cover" src="images/6.png">
+    <p class="partp">Trench Point</p>
+    <a href="https://beatsaver.com/maps/35178" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+
+  
+  <h2>Full map</h2>
+
+  <div class="map" class="p1">
+    <img class="cover" src="images/1.png">
+    <p class="partp">Mariana Trench</p>
+    <a href="https://beatsaver.com/maps/35182" target="_blank"><img src="images/bs.png" class="bslogo"></a>
+  </div>
+
+
+</body>
+
+<footer>
+  <p>© Smile 2023, All rights reserved.</p>
+  <p>Smile, Diabarha, BeatSaver and Beat Games are not associated with each other in any way.<br>
+  Support me on <a class="kofi" href="https://ko-fi.com/smile249" target="_blank">ko-fi</a>!</p>
+</footer>
+</html>
