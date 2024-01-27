@@ -74,9 +74,13 @@ body {
 
 }
 
-.right{
+.side-right{
     text-align: right;
     padding: 0 7.3%;
+}
+
+.push-down{
+    margin-top: 6vh;
 }
 
 p,
@@ -235,7 +239,7 @@ main>section>section.sec-right_title {
     max-width: 15%;
 }
 
-.up{
+.text-icon-container-up{
 
     p{
         margin-bottom: 2vh;
@@ -372,6 +376,7 @@ footer {
 }
 
 .svg {
+    aspect-ratio: 16/9;
     position: absolute; //makes them transformable and doesnt bother other elements overlapping with it
 }
 
