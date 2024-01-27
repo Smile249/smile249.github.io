@@ -5,19 +5,34 @@
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="styling.css" />
   <title>Mariana Trench</title>
+  <script src="scorecheck.js" type="text/javascript" defer=""></script>
 </head>
 
 <body>
 
-  <a class="nav" href="https://smile249.github.io/index.html">Home</a>
+  <a class="homebutton" href="https://smile249.github.io/index.html">Home</a>
+
+  <div class="username-form">
+    <form action="" id="loginForm">
+      <input type="text" id="username" class="form-control" placeholder="ScoreSaber username"><br>
+      <button type="submit">Check passes</button>
+    </form>
+  </div>
+
+
+
 
   <h1>Mariana Trench</h1>
   <h2 class="chapterText" id="chapter"> </h2>
 
   <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-  <div id="player"></div>
+  <div class="iframe-container">
+    <div id="player" class="player"></div>
+  </div>
+
 
   <script>
+    
     // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement("script");
 
@@ -188,13 +203,12 @@
         default:
           document.getElementById("chapter").innerHTML = " ";
           document.body.style.backgroundColor = "#202124"
-          document.getElementbyId("link").element.style.opacity = "0"
           break;
       }
     }, 500);
   </script>
 
-  <p id="time">Unknown</p>
+  <p id="time" class="time">Unknown</p>
 
   <h2>Play current part in Beat Saber</h2>
 
@@ -207,86 +221,86 @@
 
   <h2>Other parts</h2>
 
-  <div class="map" class="p1">
+  <div class="map" id="p3517891">
     <img class="cover" src="images/1.png">
     <p class="partp">Diving Point</p>
     <a href="https://beatsaver.com/maps/35171" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p2">
+  <div class="map" id="p3516f91">
     <img class="cover" src="images/2.png">
     <p class="partp">Drifting Shelf</p>
     <a href="https://beatsaver.com/maps/3516f" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p3">
+  <div class="map" id="p3517091">
     <img class="cover" src="images/3.png">
     <p class="partp">Incoming Void</p>
     <a href="https://beatsaver.com/maps/35170" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p4">
+  <div class="map" id="p3517291">
     <img class="cover" src="images/3.png">
     <p class="partp">New World</p>
     <a href="https://beatsaver.com/maps/35172" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p5">
+  <div class="map" id="p3516991">
     <img class="cover" src="images/3.png">
     <p class="partp">Pressurizer Point</p>
     <a href="https://beatsaver.com/maps/35169" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p6">
+  <div class="map" id="p3517671">
     <img class="cover" src="images/4.png">
     <p class="partp">Bottom Glass</p>
     <a href="https://beatsaver.com/maps/35176" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p8">
+  <div class="map" id="p3517391">
     <img class="cover" src="images/4.png">
     <p class="partp">Abyss I</p>
     <a href="https://beatsaver.com/maps/35173" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p9">
+  <div class="map" id="p34b4991">
     <img class="cover" src="images/5.png">
     <p class="partp">Abyss II</p>
     <a href="https://beatsaver.com/maps/34b49" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p10">
+  <div class="map" id="p3517491">
     <img class="cover" src="images/5.png">
     <p class="partp">Rifting Point</p>
     <a href="https://beatsaver.com/maps/35174" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p11">
+  <div class="map" id="p3517591">
     <img class="cover" src="images/5.png">
     <p class="partp">Wall Slope</p>
     <a href="https://beatsaver.com/maps/35175" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p12">
+  <div class="map" id="p3516891">
     <img class="cover" src="images/5.png">
     <p class="partp">Sonar Echo</p>
     <a href="https://beatsaver.com/maps/35168" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p13">
+  <div class="map" id="p3518191">
     <img class="cover" src="images/5.png">
     <p class="partp">Leviathan's Lair</p>
     <a href="https://beatsaver.com/maps/35181" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p14">
+  <div class="map" id="p3518091">
     <img class="cover" src="images/6.png">
     <p class="partp">Town of Atlanta</p>
     <a href="https://beatsaver.com/maps/35180" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p15">
+  <div class="map" id="p3517791">
     <img class="cover" src="images/6.png">
     <p class="partp">Entering Hell</p>
     <a href="https://beatsaver.com/maps/35177" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
-  <div class="map" class="p16">
+  <div class="map" id="p3517891">
     <img class="cover" src="images/6.png">
-    <p class="partp">Trench Point</p>
+    <p class="green-shadow partp">Trench Point</p>
     <a href="https://beatsaver.com/maps/35178" target="_blank"><img src="images/bs.png" class="bslogo"></a>
   </div>
 
-  
+
   <h2>Full map</h2>
 
-  <div class="map" class="p1">
+  <div class="map" class="p3518291">
     <img class="cover" src="images/1.png">
     <p class="partp">Mariana Trench</p>
     <a href="https://beatsaver.com/maps/35182" target="_blank"><img src="images/bs.png" class="bslogo"></a>
@@ -298,6 +312,7 @@
 <footer>
   <p>© Smile 2023, All rights reserved.</p>
   <p>Smile, Diabarha, BeatSaver and Beat Games are not associated with each other in any way.<br>
-  Support me on <a class="kofi" href="https://ko-fi.com/smile249" target="_blank">ko-fi</a>!</p>
+    Support me on <a class="kofi" href="https://ko-fi.com/smile249" target="_blank">ko-fi</a>!</p>
 </footer>
+
 </html>
