@@ -2,105 +2,171 @@
 <html lang="en">
 
 <head>
-    <title>Smile's Projects</title>
     <meta charset="UTF-8">
-    <meta name="description" content="A website to show my projects for Beat Saber and design.">
-    <meta name="keywords" content="design, beat saber, map, beatsaver, maps, audio, music, rhythm, game">
-    <meta name="author" content="Smile">
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="index.js" type="text/javascript" defer></script>
-    <link rel="icon" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/favicon.png">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sky Vieuxtemps, Smile">
+    <meta name="description" content="Smile's Portfolio Website">
+    <meta name="keywords" content="Smile, portfolio, Belgium, showcase, projects, graphic,
+        design, UI, photoshop, illustrator, photography, indesign, beat saber, thumbnails">
+    <link rel="icon" href="images/favicon/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Smile</title>
 </head>
 
 <body>
+    <header id="header">
+        <img src="images/svg/circle_hollow.svg" class="svg" id="circle1">
+        <img src="images/svg/circle_hollow.svg" class="svg" id="circle2">
+        <img src="images/svg/circle_hollow.svg" class="svg" id="circle3">
+        <img src="images/svg/star.svg" class="svg" id="star1">
+        <div id="mobile-warning">
+            This website is optimized for desktop viewing. Some elements may not display (correctly) on mobile devices.
+          </div>
+        <h1>Smile</h1>
+        <img src="images/svg/star.svg" class="svg" id="star2">
+        <img src="images/svg/circle_hollow.svg" class="svg" id="circle4">
+        <img src="images/svg/circle_hollow.svg" class="svg" id="circle5">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-        <a class="lefthandside" href="marianatrench/trench.html">Mariana Trench</a>
+        <div class="empty"></div>
+    </header>
 
-    <h1>Smile's Projects</h1>
-    
-    <p class="subtitle">Weather satellites</p>
-
-    <div class="amtcontainer">
-        <p class="lefthandside">
-            This is a fairly new hobby to me. At first I didn't even know receiving imagery from
-            weather satellites is a thing. <br>
-            For the first couple of months I used a V-dipole<sup><a href="images/vdipole.jpg" target="_blank">1.0</a></sup>
-            antenna I made myself using some wood from the back of my yard, <br> some garden wire and coaxial wire.
-            I could receive APT<sup><a href="images/NOAA19_July13.png" target="_blank">1.1</a></sup> <i>(Automatic Picture Transmission)</i> 
-            signals with that from NOAA <br> satellites. Shortly after Meteor-M2 N2-3 launched, which featured
-            higher quality images and actual colored <br> images<sup><a href="images/METEORN2-3_2July.png" target="_blank">1.2</a></sup> using the same V-dipole antenna.
-            Although the transponder of this satellite is rather iffy and not very consistent.
-        </p>
-    </div>
-
-    <div class="amtcontainer_invert">
-
-        <img class="left" src="images/hrpt_setup.jpg">
-
-        <p class="right">
-            After I saved up some money I started going for a HRPT <i>(High Resolution Picture Transmission)</i> setup, which consisted out of a dish antenna. Overall 80cm in diameter is recommended but my best 
-            best was a 60cm one. Many people switched over to digital or tv via an app now in my area. So there aren't many cheaper options for a good second handed dish anymore.
-            I made a helical antenna with a 3D printed scaffold and put it all together onto the dish. It took me quite a few tries to get a good signal that resulted into an image.
-            The first actual HRPT signal I received was NOAA 15 but the signal was too weak due to it's half broken transponder. Keep in mind that these HRPT signals are also way higher frequency
-            than the APT ones (APT is 137MHz and HRPT is 1.7GHz). They are also harder to receive due to higher bandwidth, etc. I had to buy an LNA <i>(Low Noise Amplifier)</i> which had a filter and amp built into
-            it so I could properly receive all of the satellite's data. If I had a bigger dish it would've been less of a problem but it's highly recommended to anyone.
-        </p>
+    <main>
         
-    </div>
+        <img src="images/svg/circle_hollow.svg" class="svg" id="circle6">
+        <img src="images/svg/circle_hollow.svg" class="svg" id="circle7">
+        <img src="images/svg/circle_hollow.svg" class="svg" id="circle8">
+        <section class="sec-left">
+            <section id="about" class="sec-left_title">
+                <h1>About Me</h1>
+            </section>
+            <p>Hi there, I'm Smile!<br>
+                I do graphic &amp; UI design, web development,<br>
+                network engineering, a bit of hardware engineering<br>
+                and photography as a hobby!</p>
 
-    <p class="lefthandside_min">Here are some of the images I got from HRPT reception:</p>
-    <ul>
-        <li><a href="images/avhrr_3_rgb_3b45_corrected.png" target="_blank">NOAA 19 AVHRR (RGB3b45)</a></li>
-        <li><a href="images/mhs_rgb_421.png" target="_blank">NOAA 19 MHS RGB421 (Microwave Sensor)</a></li>
-        <li><a href="images/MetOp-C_AVHRR_20230815-194328_553.png" target="_blank">METOP-C AVHRR (RGB553)</a></li>
-    </ul>
+            <p>The point of this website is to showcase what I like doing<br>
+                in my free time and show of what I'm good at! You can<br>
+                scroll further down to view my <em><a href="#expertise">expertise</a></em> and past <em><a
+                        href="#projects">projects</a></em>.</p>
 
+            <div class="empty"></div>
 
-    <p class="subtitle">Most recent Beat Saber maps</p>
+        </section>
 
-    <div class="container">
-        <div class="box">
-            <a class="cover" id="IdOne" target=”_blank”><img class="cover" id="coverOne" src=""></a>
-        </div>
-
-        <div class="box">
-            <a class="cover" id="IdTwo" target=”_blank”><img class="cover" id="coverTwo" src=""></a>
-        </div>
-
-        <div class="box">
-            <a class="cover" id="IdThree" target=”_blank”><img class="cover" id="coverThree" src="" title=""></a>
-        </div>
-        <div class="box">
-            <a class="cover" id="IdFour" target=”_blank”><img class="cover" id="coverFour" src=""></a>
-        </div>
-    </div>
-
-    <p class="subtitle">Commissioning info</p>
-
-    <div class="commission">
-        <p class="lefthandside">I also do commissions for Beat Saber maps! <br><br>
-            You can find more info such as prices below. I generally take all of my commissions from the
-            <a href="https://discord.gg/e4f3WBBVnr" target="_blank">Beat Saber Commissions Center</a>. <br>
-            If you'd rather contact me via direct messages, you can reach me on discord @ smile249.
-        </p>
-        <img src="/images/panel_map_transparent.png" alt="Commissioning prices">
-    </div>
+        <section class="sec-right">
+            <section id="expertise" class="sec-right_title">
+                <h1>Expertise</h1>
+            </section>
 
 
+            <p class="light">Adobe software I use and<br>
+                have experience in</p>
+            <div class="right-flex">
+                <div class="icon-container">
+                    <img src="images/icons_adobe/Photoshop.png" alt="Photoshop Logo">
+                    <img src="images/icons_adobe/Lightroom.png" alt="Lightroom Logo">
+                    <img src="images/icons_adobe/InDesign.png" alt="InDesign Logo">
+                    <img src="images/icons_adobe/Illustrator.png" alt="Illustrator Logo">
+                    <img src="images/icons_adobe/Premiere.png" alt="Premiere Pro Logo">
+                    <img src="images/icons_adobe/XD.png" alt="XD Logo">
+                </div>
+
+
+                <p>When it comes to design, my go-to software<br>
+                    is always by Adobe. I've used them for many<br>
+                    years and they just <b>work</b>.
+                </p>
+            </div>
+
+            <div class="empty"></div>
+
+        </section>
+
+        <section class="sec-left">
+            <section id="projects" class="sec-left_title">
+                <h1>Projects</h1>
+            </section>
+            <p>Here you can find some of the stuff<br>
+                I've made in the past that I'm quite proud of.</p>
+
+
+            <div class="vert_showcase-container">
+                <figure>
+                    <img src="images/projects/banner.png" alt="Banner concept art">
+                    <figcaption>Banner concept art</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/projects/cologne.jpg" alt="Nighttime photography in Cologne">
+                    <figcaption>Nighttime photography in Cologne</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/projects/turbo_thumb.png" alt="Beat Saber themed abstract thumbnail">
+                    <figcaption>Beat Saber themed abstract thumbnail</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/projects/website_cooking.png" alt="Cooking recipe website for finals">
+                    <figcaption>Cooking recipe website for finals</figcaption>
+                </figure>
+            </div>
+
+            <div class="empty_half"></div>
+            <span class="divider-line"></span>
+            <div class="empty_half"></div>
+        </section>
+
+        <div class="scroll-arrow up-down_anim">
+            <a href="#header">
+            <img src="images/svg/arrow.svg" alt="Scroll up">
+        </a>
+            </div>
+
+        <section id="contact" class="sec-center">
+            <section class="sec-center_title">
+                <h1>Contact</h1>
+                <p>Wish to get in contact?<br>
+                    You can find my socials and contact info below!</p>
+            </section>
+
+            <div class="socials">
+                <div class="socials-element">
+                    <a href="https://www.instagram.com/smile249_/" target="_blank">
+                        <h1>I</h1>
+                        <p class="serif-minion">Instagram</p>
+                    </a>
+                </div>
+
+                <div class="socials-element">
+
+                    <a href="mailto:sky@cumzon.ee">
+                        <h1>M</h1>
+                        <p class="serif-minion">e-mail</p>
+                    </a>
+                </div>
+
+                <div class="socials-element">
+                    <a href="https://discordapp.com/users/667800699693957120" target="_blank">
+                        <h1>D</h1>
+                        <p class="serif-minion">Discord</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
-        <p class="copyright">© Smile 2023, All rights reserved.</p>
-        <script>
-            kofiWidgetOverlay.draw('smile249', {
-                'type': 'floating-chat',
-                'floating-chat.donateButton.text': 'Support me',
-                'floating-chat.donateButton.background-color': '#ff5f5f',
-                'floating-chat.donateButton.text-color': '#fff'
-            });
-        </script>
+        <p>&copy; <em>Smile 2024</em> - All rights reserved.</p>
     </footer>
 
+</body>
 </html>

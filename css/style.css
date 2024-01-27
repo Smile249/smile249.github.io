@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,800;1,9..40,300;1,9..40,700&display=swap");
+@font-face {
+  font-family: "Minion3-Bold";
+  src: url("../fonts/Minion3/Minion3-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Minion3-BoldItalic";
+  src: url("../fonts/Minion3/Minion3-BoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Minion3-Italic";
+  src: url("../fonts/Minion3/Minion3-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Minion3-Medium";
+  src: url("../fonts/Minion3/Minion3-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Minion3-Regular";
+  src: url("../fonts/Minion3/Minion3-Regular.woff2") format("woff2");
+}
+html {
+  background-color: #141414;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+li {
+  color: white;
+}
+
+p,
+figcaption {
+  color: #AFAFAF;
+}
+
+body {
+  margin: 0 7.3%;
+  margin-top: 4%;
+}
+body header,
+body .sec-left_title,
+body .sec-right_title,
+body footer,
+body main > section > p {
+  padding: 0 7.3%;
+}
+body .icon-container {
+  margin: 0 7.3%;
+}
+body h1,
+body figcaption {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+p,
+figcaption,
+li {
+  font-family: "DM Sans", sans-serif;
+}
+
+.light {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+li {
+  font-weight: 700;
+  font-style: italic;
+}
+
+header > h1 {
+  position: relative;
+  top: -6vh;
+  font-family: Minion3-BoldItalic, serif;
+  font-size: 18.2em;
+  padding-top: 18vh;
+}
+
+main > section > p,
+figcaption {
+  font-size: 1.4em;
+}
+
+div.scroll-arrow {
+  text-align: center;
+  position: fixed;
+  bottom: 4vh;
+  right: 4vw;
+  margin: 0 auto;
+  opacity: 40%;
+}
+div.scroll-arrow a {
+  position: relative;
+  bottom: 30px;
+}
+
+.up-down_anim {
+  animation: MoveUpDown 1s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(1vh);
+  }
+  50% {
+    transform: translateY(2vh);
+  }
+}
+header > ul {
+  position: relative;
+  top: -11vh;
+}
+
+header {
+  border-left: white solid 2px;
+}
+header div.empty {
+  padding-bottom: 20vh;
+}
+
+main div.empty {
+  padding-bottom: 55vh;
+}
+main div.empty_half {
+  padding-bottom: 27.5vh;
+}
+main span.divider-line {
+  border-bottom: white solid 2px;
+  display: block;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+main > section > section > h1 {
+  font-family: Minion3-BoldItalic, serif;
+  font-size: 9.5em;
+}
+
+em {
+  font-family: "DM Sans", sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+li {
+  font-size: 1.4em;
+  display: inline;
+  margin-right: 1%;
+  opacity: 100%;
+  transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+li:hover {
+  opacity: 25%;
+  transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+main > section > section.sec-left_title {
+  position: relative;
+  top: -6vh;
+  padding-bottom: 5%;
+  border-left: white solid 2px;
+  padding-top: 20%;
+}
+
+main > section > p {
+  margin-bottom: 2%;
+}
+
+main > section > section.sec-right_title {
+  text-align: right;
+  border-right: white solid 2px;
+  position: relative;
+  top: -6vh;
+  padding-bottom: 5%;
+  padding-top: 20%;
+}
+
+.icon-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vh;
+  max-width: 15%;
+}
+
+.right-flex {
+  display: flex;
+  padding-right: 7.3%;
+  padding-left: 0.4%;
+}
+.right-flex p {
+  text-align: right;
+  width: 100%;
+  font-size: 1.4em;
+}
+.right-flex p b {
+  font-weight: 800;
+}
+
+.vert_showcase-container {
+  text-align: center;
+  max-width: 42.3%;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+.vert_showcase-container figure {
+  margin-bottom: 13%;
+}
+.vert_showcase-container figure figcaption {
+  margin-top: 2.5vh;
+  font-style: italic;
+}
+.vert_showcase-container figure img {
+  border-radius: 20px;
+}
+
+.sec-center {
+  padding: 0 25%;
+  margin-bottom: 10%;
+}
+.sec-center h1 {
+  font-size: 9.5em;
+  font-family: Minion3-BoldItalic, serif;
+}
+.sec-center .sec-center_title {
+  margin: 0 auto;
+  text-align: center;
+}
+.sec-center div {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.sec-center div h1 {
+  margin-top: 7vh;
+  font-size: 7.5em;
+  font-family: "Minion3-Bold", serif;
+  color: #AFAFAF;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 13%;
+}
+footer p {
+  font-family: "Minion3-Regular";
+}
+footer p em {
+  font-family: "Minion3-Italic";
+  text-decoration: none;
+  font-style: normal;
+}
+
+#mobile-warning {
+  font-family: "DM Sans", sans-serif;
+  display: none;
+  /* Hide by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 1200px) {
+  #mobile-warning {
+    display: block;
+    /* Show on smaller screens */
+  }
+}
+@media (max-width: 700px) {
+  .svg {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  #star1 {
+    display: none;
+  }
+}
+@media (max-width: 1500px) {
+  #star2 {
+    display: none;
+  }
+}
+.svg {
+  position: absolute;
+}
+
+#star1 {
+  top: 24vh;
+  left: 11vw;
+}
+
+#star2 {
+  bottom: 33vh;
+  left: 50vw;
+}
+
+#circle1 {
+  scale: 200%;
+  left: 89vw;
+  top: 2vh;
+}
+
+#circle2 {
+  scale: 130%;
+  right: 50vw;
+  bottom: 58vh;
+}
+
+#circle3 {
+  scale: 130%;
+  right: 46vw;
+  bottom: 48vh;
+}
+
+#circle4 {
+  left: 18vw;
+}
+
+#circle5 {
+  right: 12vw;
+  bottom: 9vh;
+}
+
+#circle6 {
+  top: 130vh;
+  left: 47vw;
+  scale: 159%;
+}
+
+#circle7 {
+  top: 200vh;
+  left: 14vw;
+}
+
+#circle8 {
+  scale: 95%;
+  top: 248vh;
+  right: 20vw;
+}/*# sourceMappingURL=style.css.map */
