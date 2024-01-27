@@ -47,7 +47,7 @@ body header,
 body .sec-left_title,
 body .sec-right_title,
 body footer,
-body main > section > p {
+body main > section > div > p {
   padding: 0 7.3%;
 }
 body .icon-container {
@@ -58,6 +58,11 @@ body figcaption {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.right {
+  text-align: right;
+  padding: 0 7.3%;
 }
 
 p,
@@ -103,8 +108,14 @@ div.scroll-arrow a {
   bottom: 30px;
 }
 
+.up-down_anim:hover {
+  animation: MoveUpDown 1s ease-in-out infinite;
+  animation-play-state: running;
+}
+
 .up-down_anim {
   animation: MoveUpDown 1s ease-in-out infinite;
+  animation-play-state: paused;
 }
 
 @keyframes MoveUpDown {
@@ -172,6 +183,10 @@ main > section > section.sec-left_title {
   padding-top: 20%;
 }
 
+main > section > p.margin_left {
+  margin-left: 7.3%;
+}
+
 main > section > p {
   margin-bottom: 2%;
 }
@@ -191,6 +206,14 @@ main > section > section.sec-right_title {
   grid-template-columns: 1fr 1fr;
   gap: 1vh;
   max-width: 15%;
+}
+
+.up {
+  position: relative;
+  bottom: 4vh;
+}
+.up p {
+  margin-bottom: 2vh;
 }
 
 .right-flex {
@@ -249,6 +272,11 @@ main > section > section.sec-right_title {
   font-size: 7.5em;
   font-family: "Minion3-Bold", serif;
   color: #AFAFAF;
+  transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.sec-center div h1:hover {
+  opacity: 40%;
+  transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 footer {
