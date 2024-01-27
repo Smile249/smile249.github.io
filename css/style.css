@@ -208,10 +208,6 @@ main > section > section.sec-right_title {
   max-width: 15%;
 }
 
-.up {
-  position: relative;
-  bottom: 4vh;
-}
 .up p {
   margin-bottom: 2vh;
 }
