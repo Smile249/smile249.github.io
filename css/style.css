@@ -302,7 +302,11 @@ footer p em {
   .svg {
     display: none;
   }
+  header div.empty {
+    padding-bottom: 45vh;
+  }
   header h1 {
+    padding-top: 25vh;
     font-size: 8em;
   }
   header ul {
@@ -352,18 +356,7 @@ footer p em {
   }
 }
 .svg {
-  aspect-ratio: 16/9;
   position: absolute;
-}
-
-#star1 {
-  top: 24vh;
-  left: 11vw;
-}
-
-#star2 {
-  bottom: 33vh;
-  left: 50vw;
 }
 
 #circle1 {

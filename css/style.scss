@@ -362,7 +362,11 @@ footer {
         display: none;
     }
     header{
+        div.empty{
+            padding-bottom: 45vh;
+        }
         h1{
+            padding-top: 25vh;
             font-size: 8em;
         }
         ul{
@@ -438,20 +442,7 @@ footer {
 
 
 .svg {
-    aspect-ratio: 16/9;
     position: absolute; //makes them transformable and doesnt bother other elements overlapping with it
-}
-
-
-
-#star1 {
-    top: 24vh;
-    left: 11vw;
-}
-
-#star2 {
-    bottom: 33vh;
-    left: 50vw;
 }
 
 #circle1 {
