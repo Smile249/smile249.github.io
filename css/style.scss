@@ -34,8 +34,8 @@ html {
     background-color: $background-clr;
     scroll-behavior: smooth;
     -ms-overflow-style: none;
+    max-height: max-content;
     scrollbar-width: none;
-    overflow-y: scroll;
 }
 
 h1,
@@ -51,6 +51,7 @@ figcaption {
 }
 
 body {
+
     margin: 0 7.3%;
     margin-top: 4%;
 
@@ -443,11 +444,12 @@ footer {
 
 .svg {
     position: absolute; //makes them transformable and doesnt bother other elements overlapping with it
+    overflow: hidden;
 }
 
 #circle1 {
-    scale: 200%;
-    left: 89vw;
+    scale: 130%;
+    left: 76vw;
     top: 2vh;
 }
 
@@ -468,12 +470,12 @@ footer {
 }
 
 #circle5 {
-    right: 12vw;
+    right: 20vw;
     bottom: 9vh
 }
 
 #circle6 {
-    top: 130vh;
+    top: 123vh;
     left: 47vw;
     scale: 159%
 }
