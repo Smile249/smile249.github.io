@@ -256,10 +256,11 @@ main>section>section.sec-right_title {
         width: 100%;
         font-size: 1.4em;
 
-        b {
-            font-weight: 800;
-        }
     }
+}
+
+b {
+    font-weight: 800;
 }
 
 .vert_showcase-container {
@@ -333,52 +334,115 @@ footer {
 }
 
 //Mobile warning
-#mobile-warning {
-    font-family: 'DM Sans', sans-serif;
-    display: none;
-    /* Hide by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f44336;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    z-index: 9999;
-}
+// #mobile-warning {
+//     font-family: 'DM Sans', sans-serif;
+//     display: none;
+//     /* Hide by default */
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     background-color: #f44336;
+//     color: white;
+//     text-align: center;
+//     padding: 10px;
+//     z-index: 9999;
+// }
 
+//mobile optimization
 @media only screen and (max-width: 1200px) {
     #mobile-warning {
         display: block;
-        /* Show on smaller screens */
+        // show on smaller screens
+    }
+}
+
+@media (max-width: 700px) {
+    .svg {
+        display: none;
+    }
+    header{
+        h1{
+            font-size: 8em;
+        }
+        ul{
+            margin-top: 3vh;
+        }
+        li{
+            margin-right: 3vw;
+            margin-bottom: 3vh;
+        }
+    }
+
+    .right-flex{
+        display: inline-block;
+    }
+
+    .icon-container{
+        display: inline-flex;
+        width: 13%;
+    }
+
+    .text-icon-container-up{
+        margin-top: 10%;
+        font-size: 0.8em;
+    }
+
+    .text-below-container{
+        margin-top: 10%;
+    }
+
+    .sec-right{
+        p{
+            margin-bottom: 5%;
+        }
+        div{
+            margin-bottom: 5%;
+        }
+    }
+
+    .sec-left_title{
+        h1{
+            font-size: 5em;
+        }
+    }
+
+    .sec-right_title{
+        h1{
+            font-size: 4em;
+        }
+    }
+
+    .vert_showcase-container{
+        figure{
+            img{
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .sec-center{
+        font-size: 50%;
+        text-align: center;
+        margin: 0 auto;
+        display: inline;
+    }
+
+    footer{
+        margin-top: 12%;
     }
 }
 
 
 //SVG Styling
-@media (max-width: 700px) {
-    .svg {
-        display: none;
-    }
-}
 
-@media (max-width: 1200px) {
-    #star1 {
-        display: none;
-    }
-}
-
-@media (max-width: 1500px) {
-    #star2 {
-        display: none;
-    }
-}
 
 .svg {
     aspect-ratio: 16/9;
     position: absolute; //makes them transformable and doesnt bother other elements overlapping with it
 }
+
+
 
 #star1 {
     top: 24vh;
