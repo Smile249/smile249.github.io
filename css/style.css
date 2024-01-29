@@ -252,16 +252,25 @@ b {
 .sec-center {
   padding: 0 25%;
   margin-bottom: 10%;
+  display: inline;
 }
 .sec-center h1 {
   font-size: 9.5em;
   font-family: Minion3-BoldItalic, serif;
 }
 .sec-center .sec-center_title {
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
+  display: inline;
 }
-.sec-center div {
+.sec-center .inline-wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 43vw;
+  width: 100%;
+  margin-bottom: 10%;
+}
+.sec-center .inline-wrapper div {
   display: flex;
   margin: 0 auto;
   text-align: center;
@@ -269,14 +278,14 @@ b {
      -moz-user-select: none;
           user-select: none;
 }
-.sec-center div h1 {
+.sec-center .inline-wrapper div h1 {
   margin-top: 7vh;
   font-size: 7.5em;
   font-family: "Minion3-Bold", serif;
   color: #AFAFAF;
   transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
-.sec-center div h1:hover {
+.sec-center .inline-wrapper div h1:hover {
   opacity: 40%;
   transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }

@@ -287,6 +287,7 @@ b {
 .sec-center {
     padding: 0 25%;
     margin-bottom: 10%;
+    display: inline;
 
     h1 {
         font-size: 9.5em;
@@ -294,29 +295,39 @@ b {
     }
 
     .sec-center_title {
-        margin: 0 auto;
         text-align: center;
+        margin: 0 auto;
+        display: inline;
     }
 
-    div {
-        h1 {
-            margin-top: 7vh;
-            font-size: 7.5em;
-            font-family: 'Minion3-Bold', serif;
-            color: $secondary-clr;
-            transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-        }
-
-        h1:hover {
-            opacity: 40%;
-            transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-        }
-
-        display: flex;
+    .inline-wrapper{
+        display: block;
         margin: 0 auto;
-        text-align: center;
-        user-select: none;
+        max-width: 43vw;
+        width: 100%;
+        margin-bottom: 10%;
+
+        div {
+            h1 {
+                margin-top: 7vh;
+                font-size: 7.5em;
+                font-family: 'Minion3-Bold', serif;
+                color: $secondary-clr;
+                transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            }
+    
+            h1:hover {
+                opacity: 40%;
+                transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            }
+    
+            display: flex;
+            margin: 0 auto;
+            text-align: center;
+            user-select: none;
+        }
     }
+    
 }
 
 footer {
