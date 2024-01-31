@@ -111,7 +111,8 @@ li {
     font-size: 1.2em;
 }
 
-header>li {
+header>ul>li {
+    color: $primary-clr;
     font-weight: 700;
     font-style: italic;
 }
@@ -135,7 +136,7 @@ div.scroll-arrow {
     bottom: 4vh;
     right: 4vw;
     margin: 0 auto;
-    opacity: 40%;
+    opacity: 80%;
 
     a {
         position: relative;
@@ -165,9 +166,9 @@ div.scroll-arrow {
     }
 }
 
-header>ul {
+header>ul>li {
     position: relative;
-    top: -11vh;
+    top: -15vh;
 }
 
 header {
@@ -195,7 +196,7 @@ main {
     }
 }
 
-main>section>section>h1 {
+main>section>section>h2 {
     font-family: Minion3-BoldItalic, serif;
     font-size: 9.5em;
 
@@ -207,7 +208,7 @@ em {
     text-decoration: underline;
 }
 
-header>li {
+header>ul>li {
     font-size: 1.4em;
     display: inline;
     margin-right: 1%;
@@ -215,7 +216,7 @@ header>li {
     transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-header>li:hover {
+a:hover{
     opacity: 25%;
     transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -328,11 +329,6 @@ b {
                 font-size: 7.5em;
                 font-family: 'Minion3-Bold', serif;
                 color: $secondary-clr;
-                transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-            }
-    
-            h1:hover {
-                opacity: 40%;
                 transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
             }
     
