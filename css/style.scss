@@ -29,6 +29,7 @@ $secondary-clr: #AFAFAF;
     src: url('../fonts/Minion3/Minion3-Regular.woff2') format('woff2');
 }
 
+
 //main setup of site
 html {
     background-color: $background-clr;
@@ -47,7 +48,7 @@ header>li {
 }
 
 p,
-figcaption, 
+figcaption,
 .skills {
     color: $secondary-clr;
 }
@@ -57,11 +58,12 @@ body {
     margin: 0 7.3%;
     margin-top: 4%;
 
+
     header,
     .sec-left_title,
     .sec-right_title,
     footer,
-    main>section>div> p {
+    main>section>div>p {
         padding: 0 7.3%;
     }
 
@@ -77,22 +79,22 @@ body {
 
 }
 
-.side-right{
+.side-right {
     text-align: right;
     padding: 0 7.3%;
 }
 
-.push-down{
+.push-down {
     margin-top: 6vh;
 }
 
-.skills{
-    font-weight:400;
+.skills {
+    font-weight: 400;
     font-size: 1.4em;
     border-left: $secondary-clr solid 2px;
     padding-left: 3.2vw;
 
-    li{
+    li {
         margin-bottom: 1vh;
         list-style-type: disc;
     }
@@ -148,7 +150,7 @@ div.scroll-arrow {
     animation-play-state: running;
 }
 
-.up-down_anim{
+.up-down_anim {
     animation: MoveUpDown 1s ease-in-out infinite;
     animation-play-state: paused;
 }
@@ -215,7 +217,7 @@ header>ul>li {
     transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-a:hover{
+a:hover {
     opacity: 25%;
     transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -228,7 +230,7 @@ main>section>section.sec-left_title {
     padding-top: 20%;
 }
 
-.margin_left{
+.margin_left {
     margin-left: 7.3%;
 }
 
@@ -255,9 +257,9 @@ main>section>section.sec-right_title {
     max-width: 15%;
 }
 
-.text-icon-container-up{
+.text-icon-container-up {
 
-    p{
+    p {
         margin-bottom: 2vh;
     }
 }
@@ -315,7 +317,7 @@ b {
         display: inline;
     }
 
-    .inline-wrapper{
+    .inline-wrapper {
         display: block;
         margin: 0 auto;
         max-width: 43vw;
@@ -330,14 +332,14 @@ b {
                 color: $secondary-clr;
                 transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
             }
-    
+
             display: flex;
             margin: 0 auto;
             text-align: center;
             user-select: none;
         }
     }
-    
+
 }
 
 footer {
@@ -367,78 +369,83 @@ footer {
     .svg {
         display: none;
     }
-    header{
-        div.empty{
+
+    header {
+        div.empty {
             padding-bottom: 45vh;
         }
-        h1{
+
+        h1 {
             padding-top: 25vh;
             font-size: 8em;
         }
-        ul{
+
+        ul {
             margin-top: 3vh;
         }
-        li{
+
+        li {
             margin-right: 3vw;
             margin-bottom: 3vh;
         }
     }
 
-    .right-flex{
+    .right-flex {
         display: inline-block;
     }
 
-    .icon-container{
+    .icon-container {
         display: inline-flex;
         width: 13%;
     }
 
-    .text-icon-container-up{
+    .text-icon-container-up {
         margin-top: 10%;
         font-size: 0.8em;
     }
 
-    .text-below-container{
+    .text-below-container {
         margin-top: 10%;
     }
 
-    .sec-right{
-        p{
+    .sec-right {
+        p {
             margin-bottom: 5%;
         }
-        div{
+
+        div {
             margin-bottom: 5%;
         }
     }
 
-    .sec-left_title{
-        h1{
+    .sec-left_title {
+        h1 {
             font-size: 5em;
         }
     }
 
-    .sec-right_title{
-        h1{
+    .sec-right_title {
+        h1 {
             font-size: 4em;
         }
     }
 
-    .vert_showcase-container{
-        figure{
-            img{
+    .vert_showcase-container {
+        figure {
+            img {
                 border-radius: 5px;
             }
         }
     }
 
-    .sec-center{
+    .sec-center {
         font-size: 50%;
         text-align: center;
         margin: 0 auto;
         display: inline;
     }
 
-    footer{
+    footer {
         margin-top: 12%;
     }
 }
