@@ -56,7 +56,7 @@ body main > section > div > p {
 body .icon-container {
   margin: 0 7.3%;
 }
-body h1,
+body h1, body h2,
 body figcaption {
   -webkit-user-select: none;
      -moz-user-select: none;
