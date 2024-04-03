@@ -112,7 +112,7 @@ li {
     font-size: 1.2em;
 }
 
-header>ul>li {
+header>nav>ul>li {
     color: $primary-clr;
     font-weight: 700;
     font-style: italic;
@@ -123,7 +123,8 @@ header>h1 {
     top: -6vh;
     font-family: Minion3-BoldItalic, serif;
     font-size: 18.2em;
-    padding-top: 18vh;
+    padding-top: 25vh;
+    line-height: 1;
 }
 
 main>section>p,
@@ -167,9 +168,9 @@ div.scroll-arrow {
     }
 }
 
-header>ul>li {
+header>nav>ul>li {
     position: relative;
-    top: -15vh;
+    top: -50px;
 }
 
 header {
@@ -209,7 +210,7 @@ em {
     text-decoration: underline;
 }
 
-header>ul>li {
+header>nav>ul>li {
     font-size: 1.4em;
     display: inline;
     margin-right: 1%;
