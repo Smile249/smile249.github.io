@@ -23,7 +23,6 @@ html {
   background-color: #141414;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
-  max-height: -moz-max-content;
   max-height: max-content;
   scrollbar-width: none;
   line-height: 1.5;
@@ -58,9 +57,7 @@ body .icon-container {
 }
 body h1, body h2,
 body figcaption {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .side-right {
@@ -195,6 +192,10 @@ a:hover {
   transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+a {
+  transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
 main > section > section.sec-left_title {
   position: relative;
   top: -6vh;
@@ -234,12 +235,13 @@ main > section > section.sec-right_title {
 
 .right-flex {
   display: flex;
+  justify-content: space-between;
   padding-right: 7.3%;
   padding-left: 0.4%;
 }
 .right-flex p {
   text-align: right;
-  width: 100%;
+  max-width: 660px;
   font-size: 1.4em;
 }
 
@@ -289,9 +291,7 @@ b {
   display: flex;
   margin: 0 auto;
   text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .sec-center .inline-wrapper div h1 {
   margin-top: 7vh;
@@ -314,68 +314,11 @@ footer p em {
   font-style: normal;
 }
 
-@media only screen and (max-width: 1200px) {
-  #mobile-warning {
-    display: block;
-  }
+.arrow-hide {
+  opacity: 0;
+  scale: 0;
 }
-@media (max-width: 700px) {
-  .svg {
-    display: none;
-  }
-  header div.empty {
-    padding-bottom: 45vh;
-  }
-  header h1 {
-    padding-top: 25vh;
-    font-size: 8em;
-  }
-  header ul {
-    margin-top: 3vh;
-  }
-  header li {
-    margin-right: 3vw;
-    margin-bottom: 3vh;
-  }
-  .right-flex {
-    display: inline-block;
-  }
-  .icon-container {
-    display: inline-flex;
-    width: 13%;
-  }
-  .text-icon-container-up {
-    margin-top: 10%;
-    font-size: 0.8em;
-  }
-  .text-below-container {
-    margin-top: 10%;
-  }
-  .sec-right p {
-    margin-bottom: 5%;
-  }
-  .sec-right div {
-    margin-bottom: 5%;
-  }
-  .sec-left_title h1 {
-    font-size: 5em;
-  }
-  .sec-right_title h1 {
-    font-size: 4em;
-  }
-  .vert_showcase-container figure img {
-    border-radius: 5px;
-  }
-  .sec-center {
-    font-size: 50%;
-    text-align: center;
-    margin: 0 auto;
-    display: inline;
-  }
-  footer {
-    margin-top: 12%;
-  }
-}
+
 .svg {
   position: absolute;
   overflow: hidden;
@@ -424,4 +367,94 @@ footer p em {
   scale: 0.95;
   top: 248vh;
   right: 20vw;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.limit500 {
+  max-width: 500px;
+}
+
+@media (width <= 1250px) {
+  .svg {
+    display: none;
+  }
+  .vert_showcase-container {
+    max-width: 80%;
+  }
+  main > section > section.sec-left_title {
+    border-left: none;
+  }
+  .margin_left {
+    margin-left: 1%;
+  }
+  main > section > section > h2, main > section > section > h2 {
+    font-size: 4em;
+    text-align: center;
+  }
+  main > section > section.sec-right_title {
+    border-right: none;
+  }
+  .skills {
+    border-left: none;
+  }
+  .right-flex p {
+    font-size: 1.4rem;
+  }
+  header {
+    border: none;
+  }
+  header body {
+    margin: 0 1%;
+  }
+  header div.empty {
+    padding-bottom: 45vh;
+  }
+  header h1 {
+    padding-top: 25vh;
+    font-size: 8em;
+  }
+  header ul {
+    margin-top: 3vh;
+  }
+  header li {
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+  }
+  .right-flex {
+    display: inline-block;
+  }
+  .icon-container {
+    display: inline-flex;
+    width: 13%;
+  }
+  .text-icon-container-up {
+    margin-top: 10%;
+    font-size: 0.8em;
+  }
+  .text-below-container {
+    margin-top: 10%;
+  }
+  .sec-right p {
+    margin-bottom: 5%;
+  }
+  .sec-right div {
+    margin-bottom: 5%;
+  }
+  .sec-left_title h1 {
+    font-size: 5em;
+  }
+  .sec-right_title h1 {
+    font-size: 4em;
+  }
+  .vert_showcase-container figure img {
+    border-radius: 5px;
+  }
+  .sec-center .inline-wrapper div {
+    justify-content: center;
+    gap: 2vw;
+  }
+  footer {
+    margin-top: 12%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
