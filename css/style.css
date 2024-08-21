@@ -373,7 +373,7 @@ footer p em {
   max-width: 500px;
 }
 
-@media (width <= 1250px) {
+@media (width <= 1000px) {
   .svg {
     display: none;
   }
@@ -450,7 +450,9 @@ footer p em {
   }
   .sec-center .inline-wrapper div {
     justify-content: center;
-    gap: 2vw;
+    align-items: center;
+    gap: 4vw;
+    scale: 90%;
   }
   footer {
     margin-top: 12%;

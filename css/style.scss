@@ -432,10 +432,11 @@ footer {
 
 
 //mobile optimization
-@media (width <= 1250px) {
+@media (width <= 1000px) {
     .svg {
         display: none;
     }
+
 
     .vert_showcase-container{
         max-width: 80%;
@@ -543,7 +544,9 @@ footer {
 
     .sec-center .inline-wrapper div{
         justify-content: center;
-        gap: 2vw;
+        align-items: center;
+        gap: 4vw;
+        scale: 90%
     }
 
     footer {
